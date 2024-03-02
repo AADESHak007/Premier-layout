@@ -1,0 +1,457 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    /* background-color: lightseagreen; */
+    position: relative;
+    padding: 1px;
+}
+
+#nav {
+    /* background-color: brown; */
+    width: 100%;
+    height: 5vw;
+    margin-top: 15px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+#nav h1 {
+    position: relative;
+    /* background-color: yellow; */
+    height: 100%;
+    width: 17%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: monument;
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing:-5px;
+}
+
+#nav h1::after{
+    content: "©️";
+    position: absolute;
+    top:15%;
+    right:0%;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+#nav h1::before {
+    content: "model management"; /* Use the content property correctly */
+    position: absolute;
+    /* white-space: no-wrap; */
+    letter-spacing: normal;
+    bottom: 10%;
+    right: 0%;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+}
+
+
+
+#nav h2 {
+    /* background-color: yellow; */
+    height: 100%;
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-right: 2px solid black;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+#nav h2:nth-last-child(2) {
+    width: 25%;
+}
+#nav h2:nth-last-child(1) {
+    width: 10%;
+}
+
+#center{
+    height: 90%;
+    width: 100%;
+    /* background: rgb(142, 5, 5); */
+    padding: 3.5vw;
+}
+#content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* background: blueviolet; */
+}
+#content video {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+#uper{
+    position: absolute;
+    padding: 2vw;
+    width: 100%;
+    height: 50%;
+    /* background-color: burlywood;  */
+    bottom:0%; 
+    color: #fff;    
+}
+#u1{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 2vw;
+}
+#u1 h1{
+    font-size: 50px;
+    font-family: monument;
+    letter-spacing: -2px;
+    line-height: 3.3vw;
+    mix-blend-mode:difference;
+    
+}
+#u2{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-top:2px solid #fff;
+}
+#u2 img{
+    height: 2.5vw;
+    width: 2vw;
+}
+#scroll{
+    height:40vh;
+    width:100%;
+    white-space: nowrap;
+    overflow-x:hidden;
+    overflow-y: hidden;
+   
+
+}
+#scroll img{
+    /* display: none ; */
+    height: 100%;
+    width: 15%;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    margin: 0.7vw;
+}
+#scroll img:nth-last-child(2){  
+    -o-object-position: top;  
+       object-position: top;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    /* background-color: brown; */
+    display: inline-block;
+    padding: 2vw;
+    -webkit-animation-name:animate ;
+            animation-name:animate ;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count:infinite;
+            animation-iteration-count:infinite;
+}
+@-webkit-keyframes animate {
+    from{
+        -webkit-transform:translateX(0%);
+                transform:translateX(0%);
+    }
+    to{
+        -webkit-transform:translateX(-100%);
+                transform:translateX(-100%);
+    }
+}
+@keyframes animate {
+    from{
+        -webkit-transform:translateX(0%);
+                transform:translateX(0%);
+    }
+    to{
+        -webkit-transform:translateX(-100%);
+                transform:translateX(-100%);
+    }
+}
+#alphabet{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1.5vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 1.5vw;
+}
+#alphabet h3 {
+    font-size: 2.5vw;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+}
+#alphabet h4{
+    font-style: italic;
+    /* background-color: yellow; */
+    padding:0.3vw;
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    cursor: pointer;
+}
+#alphabet h4:hover{
+    border: 1px solid rgb(46, 45, 45);
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+#p2-left{
+    height: 100%;
+    width: 40%;
+    padding: 3vw;
+}
+#p2-left img{
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position:top;
+       object-position:top;
+}
+#p2-right{
+    height: 100%;
+    width: 40%;
+    padding: 3vw;
+}
+#p2-right img{
+    height: 75%;
+    width: 100%;
+    -o-object-fit:cover;
+       object-fit:cover;
+    -o-object-position:top center;
+       object-position:top center;
+}
+#right-down{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+#p-left{
+    width: 40%;
+    font-size: 1.4vw;
+    font-weight: 600;
+
+}
+#p-right{
+    width: 40%;
+    font-size: 1.1vw;
+    font-weight: 500;
+    line-height: 1vw;
+
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    padding: 3vw;
+    /* background-color: burlywood; */
+
+}
+#page3>h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    font-weight: 700;
+    font-family: monument;
+    margin-bottom: 3vw;
+}
+#page3 .elem{
+    position: relative;
+    height: 15%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-top: 2px solid black;
+    padding: 0 3vw;
+    -webkit-transition: all ease-in 0.23s;
+    -o-transition: all ease-in 0.23s;
+    transition: all ease-in 0.23s;
+    cursor: pointer;
+}
+.elem:hover{
+    background-color: rgb(225, 218, 218);
+}
+#page3 h3 {
+    /* background-color: red; */
+    width: 7%;
+    text-transform:uppercase;
+}
+.elem #part2{
+    /* background-color: green; */
+    width: 45%;
+}
+.elem #part2 h4{
+    text-transform: uppercase;
+    font-size:0.8em;
+}
+#page3 .elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+.elem img{
+    position: absolute;
+    left: 24%;
+    height: 5vw;
+    width: 5vw;
+    border-radius:50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position:center;
+       object-position:center;
+    opacity: 0;
+    -webkit-transition: all ease-in 0.5s;
+    -o-transition: all ease-in 0.5s;
+    transition: all ease-in 0.5s;
+}
+.elem:hover img{
+    opacity: 1;
+    left: 30%;
+}
+#footer{
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+}
+#anim{
+    height: 15%;
+    width: 100%;
+    padding: 1.2vw;
+    white-space: nowrap;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    /* background-color: brown; */
+}
+@-webkit-keyframes marquee {
+    from{
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+    }
+    to{
+        -webkit-transform: translateX(calc(-100% - 4px));
+                transform: translateX(calc(-100% - 4px));
+    }
+    
+}
+@keyframes marquee {
+    from{
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+    }
+    to{
+        -webkit-transform: translateX(calc(-100% - 4px));
+                transform: translateX(calc(-100% - 4px));
+    }
+    
+}
+#anim h1{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size:3.5vw;
+    -webkit-text-stroke: 2px black;
+    color: #fff;
+    letter-spacing: 6px;
+    font-family: monument;
+    -webkit-animation-name:marquee ;
+            animation-name:marquee ;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count:infinite;
+            animation-iteration-count:infinite;
+}
